@@ -29,7 +29,7 @@ from config import Config
 U=USERNAME
 CHAT=Config.CHAT
 msg=Config.msg
-HOME_TEXT = "<b>Hemlo, [{}](tg://user?id={})\n\nI'm UltronMusic, a Music RoBot for playing music in Channels and Groups 24*7.\n\nI can even Stream Youtube Live in Your Voicechat.\n\\n\nHit /help to know about available commands.</b>"
+HOME_TEXT = "<b>Hemlo, [{}](tg://user?id={})\n\nI'm UltronMusic, a Music RoBot for playing music in Channels and Groups 24*7.\n\nI can even Stream Youtube Live in Your Voicechat.\n\nHit /help to know about available commands.</b>"
 HELP = """
 <b>Add the bot and User account in your Group with admin rights.
 Start a VoiceChat.
