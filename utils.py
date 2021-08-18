@@ -125,7 +125,7 @@ class UltronMusic(object):
         group_call = self.group_call
         client = group_call.client
         chat_id = LOG_GROUP
-        message = await bot.send_message(
+        message = await ultron.send_message(
             chat_id,
             text,
             disable_web_page_preview=True,
@@ -144,7 +144,7 @@ class UltronMusic(object):
             # credits: https://t.me/c/1480232458/6825
             #os.mkfifo(raw_file)
             if song[3] == "telegram":
-                original_file = await bot.download_media(f"{song[2]}")
+                original_file = await ultron.download_media(f"{song[2]}")
             elif song[3] == "youtube":
                 url=song[2]
                 try:
