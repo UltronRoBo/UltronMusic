@@ -68,7 +68,7 @@ admin_filter=filters.create(is_admin)
 @Client.on_message(filters.command(["play", f"play@{U}"]) | (filters.private) | filters.audio & filters.private)
 async def yplay(_, message: Message):
     if ADMIN_ONLY == "Y":
-        admins = await um.get_admins()
+        admins = await um.get_admins(CHAT)
         if message.from_user.id not in admins:
             m=await message.reply_sticker("CAADBQADsQIAAtILIVYld1n74e3JuQI")
             await um.delete(m)
