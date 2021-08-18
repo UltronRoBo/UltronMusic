@@ -24,7 +24,7 @@ SOFTWARE.
 
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from utils importu um, RADIO, USERNAME
+from utils import um, RADIO, USERNAME
 from config import Config
 from config import STREAM
 CHAT=Config.CHAT
