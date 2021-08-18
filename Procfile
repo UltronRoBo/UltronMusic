@@ -1,1 +1,1 @@
-ULTRON: bash ultron.sh
+worker: bash ultron.sh
