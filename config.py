@@ -50,9 +50,9 @@ class Config:
     API_ID = int(os.environ.get("API_ID", ''))
     CHATS = os.environ.get("CHAT", '')
     CHAT = [int(chats) if re.search('^\d+$', chats) else chats for chats in (CHATS).split()]
-    LOG_GROUP=os.environ.get("LOG_GROUP", "")
+    LOG_GROUP = [(os.environ.get("LOG_GROUP", "")).split()]
     if LOG_GROUP:
-        LOG_GROUP=int(LOG_GROUP)
+        LOG_GROUP=[int(LOG_GROUP).split()]
     else:
         LOG_GROUP=None
     STREAM_URL=finalurl
