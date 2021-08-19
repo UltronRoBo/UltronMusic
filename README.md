@@ -24,7 +24,7 @@ https://user-images.githubusercontent.com/73926361/130031249-1aa3bab3-0282-47ed-
 - `𝘽𝙊𝙏_𝙏𝙊𝙆𝙀𝙉`
   - Yᴏᴜʀ Bᴏᴛ Tᴏᴋᴇɴ, ᴀs ᴀ Sᴛʀɪɴɢ. Gᴇᴛ ɪᴛ ғʀᴏᴍ <a href="https://telegram.me/BotFather" alt="BOT_TOKEN"> <img src="https://img.shields.io/badge/BOT__TOKEN-f809ed?logo=telegram" /></a> ᴏɴ Tᴇʟᴇɢʀᴀᴍ
 - `𝙎𝙀𝙎𝙎𝙄𝙊𝙉_𝙎𝙏𝙍𝙄𝙉𝙂`
-  - Pʏʀᴏɢʀᴀᴍ Sᴛʀɪɴɢ Sᴇssɪᴏɴ ᴏғ ʏᴏᴜʀ Tᴇʟᴇɢʀᴀᴍ Hᴇʟᴘᴇʀ Aᴄᴄᴏᴜɴᴛ. Rᴇᴀᴅ [𝘛𝘩𝘪𝘴](https://github.com/UltronRoBo/UltronMusic/blob/UltronVC/README.md#session) ᴛᴏ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ɢᴇᴛ ɪᴛ.
+  - Pʏʀᴏɢʀᴀᴍ Sᴛʀɪɴɢ Sᴇssɪᴏɴ ᴏғ ʏᴏᴜʀ Tᴇʟᴇɢʀᴀᴍ Hᴇʟᴘᴇʀ Aᴄᴄᴏᴜɴᴛ. Rᴇᴀᴅ [𝘛𝘩𝘪𝘴](https://github.com/UltronRoBo/UltronMusic#𝕾𝖊𝖘𝖘𝖎𝖔𝖓) ᴛᴏ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ɢᴇᴛ ɪᴛ.
 - `𝘾𝙃𝘼𝙏`
   - ID ᴏғ ᴀ Cʜᴀɴɴᴇʟ/Gʀᴏᴜᴘ, ᴡʜᴇʀᴇ ᴜ ᴡᴀɴᴛ ᴛʜᴇ MᴜsɪᴄBᴏᴛ ᴛᴏ ᴘʟᴀʏ Mᴜsɪᴄ ɪɴ VᴏɪᴄᴇCʜᴀᴛ. **_Iᴛ ᴍᴜsᴛ ʙᴇɢɪɴ ᴡɪᴛʜ -100._**
 - `𝘼𝘿𝙈𝙄𝙉𝙎`
