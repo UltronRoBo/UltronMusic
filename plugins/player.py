@@ -263,8 +263,6 @@ async def yplay(_, message: Message):
                 f"**{i}**. **🎸{x[1]}**\n   👤**Requested by:** {x[4]}"
                 for i, x in enumerate(playlist)
                 ])
-        if EDIT_TITLE:
-            await um.edit_title()
         if message.chat.type == "private":
             await message.reply_text(pl)
         if LOG_GROUP:
