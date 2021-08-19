@@ -50,7 +50,8 @@ class Config:
     API_ID = int(os.environ.get("API_ID", ''))
     CHATS = os.environ.get("CHAT", '')
     CHAT = [int(chats) if re.search('^\d+$', chats) else chats for chats in (CHATS).split()]
-    LOG_GROUP = [(os.environ.get("LOG_GROUP", "")).split()]
+    LOGS = os.environ.get("LOG_GROUP", '')
+    LOG_GROUP = [int(logs) if re.search('^\d+$', logs) else logs for logs in (LOGS).split()]
     if LOG_GROUP:
         LOG_GROUP=int(LOG_GROUP)
     else:
