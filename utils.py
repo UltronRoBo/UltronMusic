@@ -98,7 +98,7 @@ class UltronMusic(object):
         if not playlist:
             return
         if len(playlist) == 1:
-            await mp.start_radio()
+            await um.start_radio()
             return
         client = group_call.client
         download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)
@@ -109,8 +109,6 @@ class UltronMusic(object):
         # remove old track from playlist
         old_track = playlist.pop(0)
         print(f"- START PLAYING: {playlist[0][1]}")
-        if EDIT_TITLE:
-            await self.edit_title()
         if LOG_GROUP:
             await self.send_playlist()
         os.remove(os.path.join(
