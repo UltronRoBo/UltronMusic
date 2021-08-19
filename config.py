@@ -52,7 +52,7 @@ class Config:
     CHAT = [int(chats) if re.search('^\d+$', chats) else chats for chats in (CHATS).split()]
     LOG_GROUP = [(os.environ.get("LOG_GROUP", "")).split()]
     if LOG_GROUP:
-        LOG_GROUP=[int(LOG_GROUP).split()]
+        LOG_GROUP=int(LOG_GROUP)
     else:
         LOG_GROUP=None
     STREAM_URL=finalurl
