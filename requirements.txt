@@ -9,7 +9,7 @@ Pillow
 python-arq
 psutil
 psutil
-py-tgcalls==0.5.5
+pytgcalls[pyrogram]
 python-dotenv
 requests
 search_engine_parser
