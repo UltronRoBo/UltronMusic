@@ -30,7 +30,7 @@ from utils import um, USERNAME, FFMPEG_PROCESSES
 from pyrogram.raw import functions, types
 import os
 import sys
-from pyrogram.types import BotCommand
+from pyrogram.raw.types import BotCommandScopeDefault
 
 # Set new commands
 
@@ -80,7 +80,10 @@ async def restart(client, message):
 
 async def set_commands():
     
-  await ultron.set_bot_commands(
+ await ultron.send(
+    functions.bots.SetBotCommands(
+        scope=BotCommandScopeDefault(),
+        lang_code = "en",
         commands=[
             types.BotCommand(
                 command="start",
@@ -169,6 +172,7 @@ async def set_commands():
         ]
     
 )
+ )
 
 ultron.loop.run_until_complete(set_commands())
 idle()
