@@ -30,6 +30,10 @@ from utils import um, USERNAME, FFMPEG_PROCESSES
 from pyrogram.raw import functions, types
 import os
 import sys
+from pyrogram.types import BotCommand
+
+# Set new commands
+
 from threading import Thread
 from signal import SIGINT
 import subprocess
@@ -74,8 +78,9 @@ async def restart(client, message):
         ).start()    
 
 
-ultron.send(
-    functions.bots.SetBotCommands(
+async def set_commands():
+    
+  await ultron.set_bot_commands(
         commands=[
             types.BotCommand(
                 command="start",
@@ -162,8 +167,9 @@ ultron.send(
                 description="Update and restart the bot"
             )
         ]
-    )
+    
 )
 
+ultron.loop.run_until_complete(set_commands())
 idle()
 ultron.stop()
