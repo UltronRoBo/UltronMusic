@@ -1,12 +1,8 @@
 FROM python:latest
-
+WORKDIR .
 RUN apt update && apt upgrade -y
 RUN apt install git curl python3-pip ffmpeg -y
+COPY . .
 RUN pip3 install -U pip
-COPY requirements.txt /requirements.txt
-RUN cd /
 RUN pip3 install -U -r requirements.txt
-RUN mkdir /UltronMusic
-WORKDIR /UltronMusic
-COPY ultron.sh /ultron.sh
-CMD ["/bin/bash", "/ultron.sh"]
+CMD ["bash", "ultron.sh"]
